@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>文房图谱 · 古籍图录简化版</title>
+<style>
+:root{--paper:#f6f0e2;--ink:#2b2520;--soft:#6f6250;--seal:#a23325;--line:#d9cdb2;--card:#fffdf6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:"Songti SC","Noto Serif CJK SC",serif;line-height:1.9}
+.wrap{max-width:980px;margin:0 auto;padding:80px 22px}
+h1{font-size:42px;letter-spacing:.42em;margin:0 0 14px;font-weight:600;text-indent:.42em}
+.sub{font-size:16px;color:var(--soft);letter-spacing:.14em;margin-bottom:8px}
+.rule{height:3px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);margin:26px 0 40px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+a.book{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);
+ padding:26px 24px;transition:.18s}
+a.book:hover{border-color:var(--seal);transform:translateY(-2px)}
+.book .vol{font-size:12px;letter-spacing:.24em;color:var(--seal);margin-bottom:10px}
+.book h2{font-size:24px;letter-spacing:.2em;margin:0 0 10px;font-weight:600}
+.book p{margin:0;font-size:14px;color:var(--soft);line-height:1.85}
+.book .go{margin-top:16px;font-size:13px;letter-spacing:.2em;color:var(--seal)}
+.book.soon{opacity:.55;pointer-events:none}
+footer{margin-top:54px;font-size:12px;color:var(--soft);border-top:1px solid var(--line);padding-top:18px;line-height:1.95}
+@media(max-width:700px){.cards{grid-template-columns:1fr}h1{font-size:30px}.wrap{padding:52px 18px}}
+</style></head><body>
+<div class="wrap">
+  <h1>文房图谱</h1>
+  <div class="sub">把古人留下的文房图录，一页一页读下来</div>
+  <div class="rule"></div>
+  <div class="cards">
+    <a class="book" href="bupu/">
+      <div class="vol">卷 一</div>
+      <h2>米庵藏笔谱</h2>
+      <p>日本天保五年（1834）刊，市河米庵编。收中国明清毛笔二百余支，每支一笔图、一名牌、一段品评。全谱高清影像，按丁折叠，可逐页翻阅。</p>
+      <div class="go">进入翻阅 →</div>
+    </a>
+    <div class="book soon">
+      <div class="vol">卷 二</div>
+      <h2>中国墨谱</h2>
+      <p>明代墨锭图录：墨样、墨名、题赞。依同一体例整理中。</p>
+      <div class="go">制作中</div>
+    </div>
+  </div>
+  <footer>
+    影像均取自各收藏机构公开的数字馆藏，仅作个人研读与教学整理使用；版权归原收藏机构，如需公开发布图片请向馆方申请。<br>
+    整理：蜜蜂练字 · 王老师
+  </footer>
+</div>
+</body></html>
