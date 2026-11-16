@@ -3,16 +3,29 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>方氏墨谱 · 墨样精选</title>
 <style>
-:root{--paper:#f5efe1;--card:#fffdf6;--ink:#241f18;--soft:#6f6250;--seal:#9c3220;--gold:#96762c;--line:#d8cbb0}
+:root{--paper:#F5F0E6;--card:#FCFAF5;--ink:#262219;--soft:#6E665A;--seal:#AE3726;--gold:#9A7B2D;--line:#E1D9C6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#1C1814;--card:#262019;--ink:#EDE5D5;--soft:#A79C89;--line:#3A332A;--seal:#CE6A4F;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1C1814;--card:#262019;--ink:#EDE5D5;--soft:#A79C89;--line:#3A332A;--seal:#CE6A4F;color-scheme:dark}
+img.brand-logo{filter:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) img.brand-logo{filter:invert(1)}}
+:root[data-theme="dark"] img.brand-logo{filter:invert(1)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"Songti SC","Noto Serif CJK SC",serif;line-height:1.85;font-size:16px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Serif SC","Songti SC","Noto Serif CJK SC",serif;line-height:1.85;font-size:16px}
 a{color:var(--seal);text-decoration:none}
-.cover{text-align:center;padding:76px 20px 42px;border-bottom:3px double var(--ink)}
-.cover .seal{display:inline-block;border:2px solid var(--seal);color:var(--seal);font-size:13px;padding:6px 8px;line-height:1.2;letter-spacing:.2em;writing-mode:vertical-rl;margin-bottom:20px}
-.cover h1{font-size:44px;letter-spacing:.4em;margin:0 0 8px;font-weight:600;text-indent:.4em}
-.cover .sub{font-size:15px;color:var(--soft);letter-spacing:.12em}
-.cover .meta{font-size:13px;color:#8b7d66;margin-top:14px;letter-spacing:.06em}
+.masthead{padding:44px 20px 26px;border-bottom:3px double var(--line)}
+.masthead .wrap-h{max-width:1300px;margin:0 auto;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.brand{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.brand img{display:block;height:132px;width:auto;max-width:100%}
+.brand .logo-caption{margin:0;font-family:"STFangsong","FangSong","仿宋",serif;font-size:21px;letter-spacing:.4em;line-height:1;transform:translateY(-18px);color:var(--ink)}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--soft);margin:0 0 6px}
+.masthead h1{font-family:"Noto Serif SC","Songti SC",serif;font-weight:900;font-size:clamp(30px,5vw,42px);letter-spacing:.06em;margin:0 0 8px;line-height:1.2}
+.masthead .sub{font-size:15px;color:var(--soft);letter-spacing:.1em;margin:0 0 6px}
+.masthead .meta{font-size:12.5px;color:var(--soft);margin:2px 0;letter-spacing:.04em}
+.x-seal{display:inline-block;border:2px solid var(--seal);color:var(--seal);font-size:13px;padding:6px 8px;line-height:1.2;letter-spacing:.2em;writing-mode:vertical-rl;margin-bottom:20px}
+.x-h1{font-size:44px;letter-spacing:.4em;margin:0 0 8px;font-weight:600;text-indent:.4em}
+.x-sub{font-size:15px;color:var(--soft);letter-spacing:.12em}
+.x-meta{font-size:13px;color:#8b7d66;margin-top:14px;letter-spacing:.06em}
 .wrap{max-width:1300px;margin:0 auto;padding:0 18px 80px}
 section{padding-top:42px}
 h2.ch{font-size:26px;letter-spacing:.2em;margin:0 0 6px;font-weight:600}
@@ -39,15 +52,23 @@ a.mo span{display:block;font-size:10px;color:#a2957e;margin-top:2px}
 #viewer .nav:hover{opacity:1}
 #prev{left:0} #next{right:0}
 footer{text-align:center;font-size:12px;color:#8b7d66;border-top:1px solid var(--line);padding:22px;margin-top:36px;line-height:1.9}
-@media(max-width:700px){body{font-size:15px}.cover h1{font-size:32px}.grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}a.mo img{height:200px}.kv{grid-template-columns:86px 1fr}}
+@media(max-width:700px){body{font-size:15px}.x-h1{font-size:32px}.grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}a.mo img{height:200px}.kv{grid-template-columns:86px 1fr}}
 </style></head><body>
 
-<div class="cover">
-  <div class="seal">方氏墨譜</div>
-  <h1>方氏墨谱 · 墨样</h1>
-  <div class="sub">明代墨锭图样 · 精选 48 图</div>
-  <div class="meta">〔明〕方于鲁 编 ｜ 万历十六年（1588）方氏美荫堂刊 ｜ 全书列墨三百八十五式</div>
-  <div class="meta">影像：国立国会图书馆藏本</div>
+<div class="masthead">
+  <div class="wrap-h">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo-xingyuezhai.png" alt="星月斋制墨">
+      <p class="logo-caption">星月齋製墨</p>
+    </div>
+    <div>
+      <p class="eyebrow">文房圖譜 · 墨譜</p>
+      <h1>方氏墨谱 · 墨样</h1>
+      <p class="sub">明代墨锭图样 · 精选 48 图</p>
+      <p class="meta">〔明〕方于鲁 编 ｜ 万历十六年（1588）方氏美荫堂刊 ｜ 全书列墨三百八十五式</p>
+      <p class="meta">影像：国立国会图书馆藏本</p>
+    </div>
+  </div>
 </div>
 
 <div class="wrap">
