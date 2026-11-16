@@ -53,6 +53,28 @@ a.mo span{display:block;font-size:10px;color:#a2957e;margin-top:2px}
 #prev{left:0} #next{right:0}
 footer{text-align:center;font-size:12px;color:#8b7d66;border-top:1px solid var(--line);padding:22px;margin-top:36px;line-height:1.9}
 @media(max-width:700px){body{font-size:15px}.x-h1{font-size:32px}.grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}a.mo img{height:200px}.kv{grid-template-columns:86px 1fr}}
+
+/* —— 手机端加固 —— */
+html,body{max-width:100%;overflow-x:hidden}
+img{max-width:100%;height:auto}
+.kv dd{min-width:0;overflow-wrap:anywhere}
+.masthead .meta{line-height:1.75;overflow-wrap:anywhere}
+@media (max-width:700px){
+  .masthead{padding:26px 14px 16px}
+  .masthead .wrap-h{gap:10px}
+  .brand img{height:92px}
+  .brand .logo-caption{font-size:15px;letter-spacing:.3em;transform:translateY(-10px)}
+  .masthead h1{font-size:26px;letter-spacing:.04em}
+  .masthead .sub{font-size:13px}
+  .masthead .meta{font-size:11.5px}
+  .wrap{padding:0 14px 64px}
+  .kv{grid-template-columns:1fr;gap:0}
+  .kv dt{margin-top:10px;font-size:12px}
+  .kv dd{font-size:14px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  a.mo img{height:150px}
+  table.toc{font-size:12px}
+}
 </style></head><body>
 
 <div class="masthead">
